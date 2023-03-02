@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f1f1;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.1);
+  margin-bottom: 5%;
+}
+
+.fundal {
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+
+.titlu {
+  position: relative;
+  width: 75%;
+  height: auto;
+  margin: auto;
+  padding-top: 21%;
+  padding-bottom: 26%;
+}
+
+.main h1 {
+  font-size: 30px;
+  letter-spacing: 0.5px;
+  font-family: "Montserrat", sans-serif;
+  color: #f2f1f1;
+  font-weight: 400;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+.titlu h1 {
+  text-align: center;
+}
+
+/*BUTON CONTACT*/
+.contact {
+  position: relative;
+  float: right;
+  padding-top: 2%;
+  padding-right: 3%;
+}
+.contact a {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  color: #f2f1f1;
+  font-weight: 200;
+  letter-spacing: -0.75px;
+  text-decoration: none;
+}
+/* ANIMANTIE BUTON CONTACT*/
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #f2f1f1;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #f2f1f1;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/*GRID*/
+
+.grid_container {
+  display: grid;
+  /*grid-template-columns: 27em 27em 27em;
+  grid-template-rows: 16em 16em;*/
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 16.5em 16.5em;
+  column-gap: 70px;
+  row-gap: 70px;
+  justify-items: center;
+  justify-content: space-between;
+  background-color: #f2f1f1;
+  margin: 50px 0px;
+  padding: 25px 50px;
+  width: 100%;
+  height: 654px;
+}
+
+.buton {
+  width: 100%;
+  height: 100%;
+  box-shadow: 10px 10px 25px rgb(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.buton img {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+
+.buton div {
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  padding-top: 20%;
+  text-align: center;
+}
+
+.buton h1 {
+  font-size: 48px;
+  letter-spacing: -1px;
+  font-family: "Montserrat", sans-serif;
+  color: #f2f1f1;
+  font-weight: 400;
+}
+
+.buton h2 {
+  font-size: 32px;
+  letter-spacing: -1px;
+  font-family: "Montserrat", sans-serif;
+  color: #f2f1f1;
+  font-weight: 400;
+}
+
+.buton a {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  color: #f2f1f1;
+  font-weight: 200;
+  letter-spacing: -0.75px;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.fix div {
+  padding-top: 17%;
+}
+
+.text_fix h1 {
+  font-size: 38px;
+}

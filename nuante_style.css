@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
+
+/* #364fc7
+   #f2f1f1
+   */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f1f1;
+}
+
+header {
+  width: 100%;
+  height: 200px;
+  box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.1);
+}
+
+.border {
+  position: absolute;
+  width: 100%;
+  border-top: 5px solid #364fc7;
+}
+
+.fundal {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  position: absolute;
+}
+
+.logo {
+  width: 60%;
+  height: auto;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 25px;
+}
+
+.main {
+  margin: 25px 0px 0px 0px;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  gap: 100px;
+  padding: 40px 12%;
+}
+
+h1 {
+  font-size: 46px;
+  letter-spacing: 0.5px;
+  font-family: "Montserrat", sans-serif;
+  color: #364fc7;
+  font-weight: 500;
+  padding-left: 140px;
+  padding-top: 20px;
+}
+
+h2 {
+  font-size: 40px;
+  letter-spacing: 0.5px;
+  font-family: "Montserrat", sans-serif;
+  color: #364fc7;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+.text {
+  font-size: 30px;
+  letter-spacing: -0.5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  text-align: justify;
+  padding: 40px 0px;
+}
+.txt_1 {
+  color: #364fc7;
+}
+.txt_2 {
+  color: #f2f1f1;
+  font-size: 27px;
+}
+.accent_fix {
+  color: #f2f1f1;
+  padding-left: 340px;
+}
+
+.nonculori img {
+  width: 100%;
+  height: auto;
+}
+
+.content_align {
+  padding: 0px 12%;
+}
+
+.rece img {
+  width: 100%;
+  height: auto;
+  padding: 40px 0px;
+}
+
+.accent {
+  background-color: #364fc7;
+  border-radius: 5px;
+  margin: 40px 0px;
+  box-shadow: 0px 25px 25px rgb(0, 0, 0, 0.1);
+}
+
+.nuante img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.schema {
+  padding-top: 40px;
+}
+
+.schema img {
+  width: 100%;
+  height: auto;
+}
+.schema p {
+  padding: 0px;
+  font-size: 30px;
+}
+
+#txt_fix {
+  font-size: 26px;
+}
+
+.schema h1 {
+  padding-left: 340px;
+}
+
+.accent h1,
+.accent h2,
+.accent p {
+  color: #f2f1f1;
+}
+
+.img_fix {
+  background-color: #f2f1f1;
+  padding: 30px;
+  border-radius: 50%;
+}
+
+.monocromatic img,
+.analoaga img,
+.triad img {
+  padding: 30px 40px 60px 40px;
+}
+
+.schema .accent {
+  margin: 0px 0px 60px 0px;
+}
+#fix {
+  margin: 0px;
+}
