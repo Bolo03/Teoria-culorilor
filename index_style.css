@@ -6,47 +6,46 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%; /* => 1 rem = 10px*/
+}
+
 body {
   background-color: #f2f1f1;
 }
 
 .main {
   width: 100%;
-  height: 100%;
-  box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.1);
-  margin-bottom: 5%;
+  height: 100vh;
+  box-shadow: 0 1rem 2.5rem rgb(0, 0, 0, 0.1);
 }
 
 .fundal {
-  width: 100%;
-  height: auto;
+  width: inherit;
+  height: inherit;
   position: absolute;
 }
 
 .titlu {
   position: relative;
-  width: 75%;
+  max-width: 75%;
   height: auto;
   margin: auto;
-  padding-top: 21%;
-  padding-bottom: 26%;
+  top: 35%;
 }
 
-.main h1 {
-  font-size: 30px;
+h1 {
+  font-size: 3.2rem;
   letter-spacing: 0.5px;
   font-family: "Montserrat", sans-serif;
   color: #f2f1f1;
   font-weight: 400;
+  text-align: center;
 }
 
-.logo {
+#logo {
   width: 100%;
   height: auto;
-}
-
-.titlu h1 {
-  text-align: center;
 }
 
 /*BUTON CONTACT*/
@@ -57,7 +56,7 @@ body {
   padding-right: 3%;
 }
 .contact a {
-  font-size: 30px;
+  font-size: 3.2rem;
   font-family: "Montserrat", sans-serif;
   color: #f2f1f1;
   font-weight: 200;
@@ -93,19 +92,17 @@ body {
 
 .grid_container {
   display: grid;
-  /*grid-template-columns: 27em 27em 27em;
-  grid-template-rows: 16em 16em;*/
-  grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 16.5em 16.5em;
-  column-gap: 70px;
-  row-gap: 70px;
+  grid-template-columns: 3fr 3fr 3fr;
+  grid-template-rows: 2fr 2fr;
+  column-gap: 6rem;
+  row-gap: 6rem;
   justify-items: center;
   justify-content: space-between;
   background-color: #f2f1f1;
-  margin: 50px 0px;
-  padding: 25px 50px;
+  margin: 5rem 0;
+  padding: 0 5rem;
   width: 100%;
-  height: 654px;
+  height: 75vh;
 }
 
 .buton {
@@ -116,33 +113,29 @@ body {
 }
 
 .buton img {
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: auto;
+  width: inherit;
+  height: inherit;
   position: absolute;
 }
 
-.buton div {
+.btn-text {
   z-index: 100;
   position: absolute;
   width: 100%;
   height: 100%;
-  margin: 0px auto;
-  padding-top: 20%;
+  top: 30%;
   text-align: center;
 }
-
-.buton h1 {
-  font-size: 48px;
+.buton h2 {
+  font-size: 4.8rem;
   letter-spacing: -1px;
   font-family: "Montserrat", sans-serif;
   color: #f2f1f1;
   font-weight: 400;
 }
 
-.buton h2 {
-  font-size: 32px;
+.buton h3 {
+  font-size: 3.2rem;
   letter-spacing: -1px;
   font-family: "Montserrat", sans-serif;
   color: #f2f1f1;
@@ -150,7 +143,7 @@ body {
 }
 
 .buton a {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-family: "Montserrat", sans-serif;
   color: #f2f1f1;
   font-weight: 200;
@@ -159,10 +152,91 @@ body {
   margin: 10px;
 }
 
-.fix div {
-  padding-top: 17%;
+.fix-text {
+  top: 24%;
 }
 
-.text_fix h1 {
-  font-size: 38px;
+@media (max-width: 1400px) {
+  .main {
+    height: 55vh;
+  }
+
+  .titlu {
+    top: 35%;
+  }
+
+  .grid_container {
+    grid-template-columns: 3fr 3fr;
+    grid-template-rows: 2fr 2fr 2fr;
+  }
+}
+
+@media (max-width: 770px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  .contact a {
+    font-size: 2.4rem;
+  }
+
+  .buton h3 {
+    font-size: 2.4rem;
+  }
+
+  .buton h2 {
+    font-size: 3.2rem;
+  }
+
+  .buton a {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .main {
+    height: 35vh;
+  }
+
+  .grid_container {
+    height: 150vh;
+  }
+
+  .titlu {
+    top: 25%;
+  }
+  .grid_container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .contact a {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 300px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .contact a {
+    font-size: 1.2rem;
+  }
+
+  .buton h3 {
+    font-size: 1.4rem;
+  }
+
+  .buton h2 {
+    font-size: 2rem;
+  }
+
+  .buton a {
+    font-size: 1.2rem;
+  }
 }

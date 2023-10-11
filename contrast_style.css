@@ -8,27 +8,34 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   background-color: #f2f1f1;
 }
 
 header {
   width: 100%;
-  height: 200px;
-  box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.1);
+  height: 15%;
+  box-shadow: 0px 1.5rem 2.5rem rgb(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .border {
   position: absolute;
   width: 100%;
-  border-top: 5px solid #364fc7;
+  border-top: 0.5rem solid #364fc7;
+  z-index: 4;
 }
 
 .fundal {
   width: 100%;
-  height: 200px;
+  height: 100%;
   object-fit: cover;
   position: absolute;
+  z-index: 2;
 }
 
 .logo {
@@ -36,42 +43,43 @@ header {
   height: auto;
   position: relative;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 25px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  z-index: 3;
 }
 
 .main {
-  margin: 25px 0px 0px 0px;
+  margin: 2.5rem 0 0 0;
 }
+
 .content_align {
-  padding: 40px 12% 0 12%;
+  padding: 0 12%;
 }
 
 section {
   display: grid;
   grid-template-columns: 2fr 1.5fr;
-  gap: 100px;
-  padding: 40px 12%;
+  gap: 10rem;
+  padding: 4rem 12%;
 }
 
 h1 {
-  font-size: 46px;
+  font-size: 4.6rem;
   letter-spacing: 0.5px;
   font-family: "Montserrat", sans-serif;
   color: #364fc7;
   font-weight: 500;
-  padding-left: 140px;
-  padding: 20px 0px;
+  padding-left: 14rem;
+  padding: 2rem 0 2rem 14rem;
 }
 
 .text {
-  font-size: 1.65em;
+  font-size: 3rem;
   letter-spacing: -0.5px;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   text-align: justify;
-  padding-bottom: 40px;
+  padding-bottom: 4rem;
 }
 .txt_1 {
   color: #364fc7;
@@ -83,30 +91,67 @@ h1 {
 .foto_1 {
   width: 100%;
   height: auto;
-  box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.1);
+  box-shadow: 0px 1.5rem 2.5rem rgb(0, 0, 0, 0.1);
+  margin: auto 0;
 }
 .foto_2 {
   width: 100%;
-  height: auto;
+  border: 3rem solid #f2f1f1;
+  margin: auto 0;
 }
 
 .accent {
   background-color: #364fc7;
-  border-radius: 5px;
-  margin: 40px 0px 0px 0px;
-  box-shadow: 0px 25px 25px rgb(0, 0, 0, 0.1);
-  padding: 40px, 200px;
+  border-radius: 0.5rem;
+  margin: 4rem 0 0 0;
+  box-shadow: 0 2.5rem 2.5 rgb(0, 0, 0, 0.1);
+  padding: 4rem 12%;
 }
 
 .accent_align {
-  padding: 40px 200px;
-}
-
-.img_fix {
-  background-color: #f2f1f1;
-  padding: 30px;
+  padding: 4rem 20rem;
 }
 
 .txt_align {
   padding: 0;
+}
+
+@media (max-width: 1025px) {
+  .text {
+    font-size: 2.8rem;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .foto_1,
+  .foto_2 {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .text {
+    font-size: 1.6rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .foto_1,
+  .foto_2 {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
 }

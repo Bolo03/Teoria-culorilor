@@ -8,27 +8,34 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   background-color: #f2f1f1;
 }
 
 header {
   width: 100%;
-  height: 200px;
-  box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.1);
+  height: 15%;
+  box-shadow: 0px 1.5rem 2.5rem rgb(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .border {
   position: absolute;
   width: 100%;
-  border-top: 10px solid #364fc7;
+  border-top: 0.5rem solid #364fc7;
+  z-index: 4;
 }
 
 .fundal {
   width: 100%;
-  height: 200px;
+  height: 100%;
   object-fit: cover;
   position: absolute;
+  z-index: 2;
 }
 
 .logo {
@@ -36,55 +43,62 @@ header {
   height: auto;
   position: relative;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 25px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  z-index: 3;
 }
 
 h1 {
-  font-size: 46px;
+  font-size: 4.6rem;
   letter-spacing: 0.5px;
   font-family: "Montserrat", sans-serif;
   color: #364fc7;
   font-weight: 500;
-  padding-left: 280px;
-  padding-top: 20px;
+  padding: 2rem 0 2rem 14rem;
 }
 
 h2 {
-  font-size: 46px;
+  font-size: 4rem;
   letter-spacing: 0.5px;
   font-family: "Montserrat", sans-serif;
   color: #364fc7;
   font-weight: 500;
-  padding-bottom: 30px;
+  padding: 2rem 0;
 }
 
 .accent_fix {
   color: #f2f1f1;
 }
 
+.modif-grid {
+  padding-top: 0;
+}
+
 .main {
-  margin: 25px 0px 0px 0px;
-  border-bottom: 10px solid #364fc7;
+  margin-top: 2.5rem;
+  border-bottom: 1rem solid #364fc7;
 }
 
 section {
   display: grid;
   grid-template-columns: 2fr 1.5fr;
-  gap: 100px;
-  padding: 40px 12%;
+  column-gap: 10rem;
+  padding: 4rem 12%;
+  align-items: center;
 }
 
-.foto_1 {
+.foto {
   width: 100%;
   height: auto;
-  box-shadow: 0px 25px 25px rgb(0, 0, 0, 0.1);
-  border-radius: 30px;
+  border-radius: 3rem;
+}
+
+.shadow {
+  box-shadow: 0px 2.5rem 2.5rem rgb(0, 0, 0, 0.1);
 }
 
 .text {
-  font-size: 1.5em;
+  font-size: 2.7rem;
   letter-spacing: -0.5px;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
@@ -96,63 +110,145 @@ section {
 }
 .txt_2 {
   color: #f2f1f1;
-  font-size: 1.4em;
-}
-
-.foto_2 {
-  width: 100%;
-  height: auto;
-  border-radius: 30px;
+  font-size: 2.7rem;
 }
 
 .accent {
   background-color: #364fc7;
-  border-radius: 5px;
-  margin-top: 40px;
-  box-shadow: 0px 25px 25px rgb(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  margin-top: 4rem;
+  box-shadow: 0px 2.5rem 2.5rem rgb(0, 0, 0, 0.1);
+  align-items: normal;
 }
 
-.img_fix {
+.color-wheel {
+  position: relative;
+}
+
+.background-white {
+  position: absolute;
+  width: 100%;
+  aspect-ratio: 1/1;
   background-color: #f2f1f1;
-  padding: 30px;
   border-radius: 100%;
+  scale: 105%;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.front {
+  position: absolute;
+  width: 100%;
+  aspect-ratio: 1/1;
+  z-index: 3;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
 }
 
 svg {
-  width: 150px;
+  width: 15rem;
   stroke: #364fc7;
-  margin: 40px 0px;
+  grid-column: span 2;
+  margin: 2rem auto;
 }
 
-.right img {
+.img-item {
   width: 100%;
   height: auto;
-  margin: 45px 0;
 }
-.left {
+
+.text-item {
+  width: 100%;
+  height: auto;
   color: #364fc7;
   font-family: "Montserrat", sans-serif;
   text-align: center;
-  padding: 20px 0px;
 }
 
 h3 {
   font-weight: 500;
-  font-size: 40px;
-  padding: 30px 0px;
+  font-size: 4rem;
+  padding: 3rem 0px;
 }
 
 h4 {
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 300;
-  padding: 30px 0px;
+  padding: 3rem 0px;
 }
 
 .inline_text {
-  display: inline;
-  padding: 0px 10px;
+  padding: 0px 1rem;
+  font-size: 3rem;
 }
 
-.roata_text {
-  padding: 100px 0px;
+@media (max-width: 1250px) {
+  .modif-grid {
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  h1 {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .modif-ac-grid {
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .foto,
+  .background-white {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .color-wheel img,
+  .background-white {
+    left: 0;
+    right: 0;
+    margin: 0, auto;
+  }
+
+  .color-wheel {
+    margin: 5rem 0;
+  }
+
+  .modif {
+    column-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  svg {
+    width: 10rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .text {
+    font-size: 1.2rem;
+  }
+
+  h1,
+  h2 {
+    font-size: 2rem;
+  }
+
+  .modif {
+    display: flex;
+    flex-direction: column;
+  }
 }
